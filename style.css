@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height:400px;
+    width: 400px;
+    margin:50px auto;
+    background-image: linear-gradient(to left,lightgreen,springgreen,green);
+    border:1px solid white;
+}
+
+#container #door{
+    height:180px;
+    width:120px;
+    border: 1px solid brown;
+    background-image: linear-gradient(235deg,chocolate,brown,maroon);
+    margin:190px auto;
+    animation: doorOpen 15s linear 5s infinite alternate-reverse both;
+
+}
+
+@keyframes doorOpen{
+    from{
+        transform: rotateY(360deg);
+       
+    }
+    to{
+        transform: rotateY(-360deg);
+        
+    }
+}
